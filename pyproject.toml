@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "reflow-test"
+version = "0.1.0"
+description = ""
+authors = ["kwuite <kelvin@ludaro.nl>"]
+readme = "README.md"
+packages = [{include = "reflow_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+reflow = { path = "./ext/reflow", develop = true }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
